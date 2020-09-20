@@ -4,7 +4,6 @@
 // and let us generate a new one for you.
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
-
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
@@ -22,8 +21,8 @@
         "defaults": {
             // Put settings here that you want to apply to all profiles.
             "suppressApplicationTitle": false,
-            //"useAcrylic": true,
-            //"acrylicOpacity": 0.8,
+            "useAcrylic": true,
+            "acrylicOpacity": 0.8,
             "cursorShape": "filledBox"
         },
         "list": [
@@ -63,16 +62,17 @@
                 "guid": "{049b895c-b0b8-55de-bce3-27d3220d7ab3}",
                 "hidden": true,
                 "name": "PowerShell Core 6",
-                "source": "Windows.Terminal.PowershellCore"
+                "source": "Windows.Terminal.PowershellCore",
+                "fontFace": "Cascadia Code PL"
             },
             {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl",
-                "fontFace": "Fira Code",
-                "backgroundImage": "%userprofile%/OneDrive/Windows Terminal/ubuntu-bg.jpg",
-                "backgroundImageOpacity": 0.4
+                "fontFace": "Fira Code"
+                //"backgroundImage": "%userprofile%/OneDrive/Windows Terminal/ubuntu-bg.jpg",
+                //"backgroundImageOpacity": 0.4
             },
             {
                 "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
@@ -80,7 +80,6 @@
                 "name": "kali-linux",
                 "fontFace": "Fira Code",
                 "source": "Windows.Terminal.Wsl",
-                "background": "#0c0c0c",
                 "background": "#321558",
                 "backgroundImage": "%userprofile%/OneDrive/Windows Terminal/kali-linux-bg.jpg",
                 "backgroundImageOpacity": 0.4
@@ -89,13 +88,19 @@
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "source": "Windows.Terminal.Azure",
+                "fontFace": "Cascadia Code PL",
+                "colorScheme": "Monokai Night",
+                "fontSize": 12,
+                "useAcrylic": false,
+                "acrylicOpacity": 0.8
             },
             {
                 "guid": "{a3a2e83a-884a-5379-baa8-16f193a13b21}",
                 "hidden": true,
                 "name": "PowerShell 7 Preview",
-                "source": "Windows.Terminal.PowershellCore"
+                "source": "Windows.Terminal.PowershellCore",
+                "fontFace": "Cascadia Code PL"
             }
         ]
     },
@@ -120,6 +125,68 @@
             "brightPurple": "#B4009E",
             "brightCyan": "#61D6D6",
             "brightWhite": "#F2F2F2"
+        },
+        {
+            "name": "Azure",
+            "foreground": "#f1f1f1",
+            "background": "#492D7C",
+            "cursorColor": "#FFFFFF",
+            "black": "#0C0C0C",
+            "green": "#13A10E",
+            "yellow": "#C19C00",
+            "blue": "#0037DA",
+            "purple": "#881798",
+            "cyan": "#3A96DD",
+            "white": "#812727",
+            "brightBlack": "#B1B1B1",
+            "brightYellow": "#F9F1A5",
+            "brightBlue": "#3B78FF",
+            "brightPurple": "#B4009E",
+            "brightCyan": "#61D6D6",
+            "brightWhite": "#F2F2F2"
+        },
+        {
+            // Color Scheme: Dracula
+            "background": "#282A36",
+            "black": "#21222C",
+            "blue": "#BD93F9",
+            "brightBlack": "#6272A4",
+            "brightBlue": "#D6ACFF",
+            "brightCyan": "#A4FFFF",
+            "brightGreen": "#69FF94",
+            "brightPurple": "#FF92DF",
+            "brightRed": "#FF6E6E",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFFA5",
+            "cyan": "#8BE9FD",
+            "foreground": "#F8F8F2",
+            "green": "#50FA7B",
+            "name": "Dracula",
+            "purple": "#FF79C6",
+            "red": "#FF5555",
+            "white": "#F8F8F2",
+            "yellow": "#F1FA8C"
+        },
+        {
+            "name": "Monokai Night",
+            "background": "#1f1f1f",
+            "foreground": "#f8f8f8",
+            "black": "#1f1f1f",
+            "blue": "#6699df",
+            "cyan": "#e69f66",
+            "green": "#a6e22e",
+            "purple": "#ae81ff",
+            "red": "#f92672",
+            "white": "#f8f8f2",
+            "yellow": "#e6db74",
+            "brightBlack": "#75715e",
+            "brightBlue": "#66d9ef",
+            "brightCyan": "#e69f66",
+            "brightGreen": "#a6e22e",
+            "brightPurple": "#ae81ff",
+            "brightRed": "#f92672",
+            "brightWhite": "#f8f8f2",
+            "brightYellow": "#e6db74"
         }
     ],
     // Add custom keybindings to this array.
