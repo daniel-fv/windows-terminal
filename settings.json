@@ -31,10 +31,7 @@
                 "hidden": false,
                 "name": "PowerShell Core",
                 "source": "Windows.Terminal.PowershellCore",
-                "hidden": false,
-                "cursorColor": "#C19C00",
-                "foreground": "#C19C00",
-                "background": "#0c0c0c",
+                "colorScheme": "Dracula",
                 "fontSize": 12,
                 "experimental.retroTerminalEffect": false,
                 "fontFace": "Cascadia Code PL"
@@ -70,9 +67,12 @@
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "Windows.Terminal.Wsl",
-                "fontFace": "Fira Code"
+                //"fontFace": "Fira Code",
+                "fontFace": "Cascadia Code PL",
+                "fontSize": 14,
+                "colorScheme": "Monokai Night"
                 //"backgroundImage": "%userprofile%/OneDrive/Windows Terminal/ubuntu-bg.jpg",
-                //"backgroundImageOpacity": 0.4
+                //"backgroundImageOpacity": 0.1
             },
             {
                 "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
@@ -91,7 +91,7 @@
                 "source": "Windows.Terminal.Azure",
                 "fontFace": "Cascadia Code PL",
                 "colorScheme": "Monokai Night",
-                "fontSize": 12,
+                "fontSize": 14,
                 "useAcrylic": false,
                 "acrylicOpacity": 0.8
             },
